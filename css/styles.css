@@ -403,10 +403,12 @@ img{
 /** Internas **/
 
 /* Nosotros */
-.contenido-nosotros{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+@media (min-width: 768px) {
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
 }
 
 .texto-nosotros blockquote{
@@ -451,6 +453,12 @@ select{
     margin-bottom: 2rem;
     border: none;
     border-radius: 1rem;
+}
+
+@media (max-width:768px) {
+    .enviar-form{
+    width: 100%;
+    }
 }
 
 input[type="radio"]{
